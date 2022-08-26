@@ -19,3 +19,9 @@ $global-transition: all 300ms ease-in-out !default;
 
 @import "_mq.scss";
 @import "_textsizes.scss";
+
+main {
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	font-family: monospace;
+}

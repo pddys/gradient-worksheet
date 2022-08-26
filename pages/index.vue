@@ -47,6 +47,10 @@ main {
 	);
 }
 
+h1 {
+	text-align: center;
+}
+
 .c-card-container {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
