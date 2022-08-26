@@ -8,18 +8,18 @@
 					<h3>Introduction to Gradients</h3>
 				</div>
 			</NuxtLink>
-			<div class="c-card">
+			<NuxtLink to="/102" class="c-card">
 				<h2>1.02</h2>
 				<h3>Layered Gradient Backgrounds</h3>
-			</div>
-			<div class="c-card">
+			</NuxtLink>
+			<NuxtLink to="/103" class="c-card">
 				<h2>1.03</h2>
 				<h3>Stepped Gradients</h3>
-			</div>
-			<div class="c-card">
+			</NuxtLink>
+			<NuxtLink to="/104" class="c-card">
 				<h2>1.04</h2>
 				<h3>Adding Texture</h3>
-			</div>
+			</NuxtLink>
 		</div>
 	</main>
 </template>

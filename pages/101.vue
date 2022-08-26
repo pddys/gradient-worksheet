@@ -7,22 +7,26 @@
 		<div class="c-grad__wrapper">
 			<div class="c-grad-container">
 				<div class="c-grad c-grad--linear">
-					<component is="style" scoped spellcheck="false" contenteditable="true">
-						.c-grad--linear{background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);}
-					</component>
 					</div>
+				<code>
+					background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+				</code>
 				<p><span>Fig a</span><span>Linear Gradient</span></p>
 			</div>
 			<div class="c-grad-container">
 				<div class="c-grad c-grad--radial"></div>
+				<code>background: radial-gradient(yellow, #009966, purple);</code>
 				<p><span>Fig b</span><span>Radial Gradient</span></p>
 			</div>
 			<div class="c-grad-container">
 				<div class="c-grad c-grad--conic"></div>
+				<code>background: conic-gradient(red, orange, yellow, green, blue);</code>
 				<p><span>Fig c</span><span>Conic Gradient</span></p>
 			</div>
 			<div class="c-grad-container">
-				<div class="c-grad"></div>
+				<div class="c-grad c-grad--repeating"></div>
+				<code>background: repeating-linear-gradient(red, yellow 25%);</code>
+				<p><span>Fig c</span><span>Linear Repeating Gradient</span></p>
 			</div>
 		</div>
 	</main>
@@ -41,15 +45,15 @@
 		padding: 3vw;
 	}
 	.c-grad-container {
-		grid-column: auto / span 6;
-		border-bottom: 1px solid rgba(black, 0.35);
+		grid-column: 3 / span 8;
 		font-family: monospace;
-		p {
+		p, code {
 			display: flex;
 			justify-content: space-between;
+			border-bottom: 1px solid rgba(black, 0.35);
 		}
 	}
-	style{
+	style {
 	  white-space:pre-wrap; 
 	  display:block;
 	  outline:none;
@@ -66,10 +70,13 @@
 			background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 		}
 		&--radial {
-			background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+			background: radial-gradient(yellow, #009966, purple);
 		}
 		&--conic {
 			background: conic-gradient(red, orange, yellow, green, blue);
+		}
+		&--repeating {
+			background: repeating-linear-gradient(red, yellow 25%);
 		}
 	}
 </style>
